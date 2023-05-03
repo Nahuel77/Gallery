@@ -10,7 +10,7 @@ $(document).ready(function(){
 	$(document).keydown(keylistener);
 
 	function keylistener(e){
-		var keyID = e.which;
+		let keyID = e.which;
 		switch(keyID){
 			case 27:
 				close();
