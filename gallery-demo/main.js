@@ -27,7 +27,7 @@ $(document).ready(function(){
 	function show(){
 		$('#showcase').css('visibility', 'visible');
 		thispic = $(this);
-		var pic = thispic.attr('src');
+		let pic = thispic.attr('src');
 		$('#thispic').attr('src', pic);
 		actualPic();
 	}
@@ -38,13 +38,13 @@ $(document).ready(function(){
 	}
 
 	function prevPic(){
-		var pic = thispic.prev().attr('src');
+		let pic = thispic.prev().attr('src');
 		$('#thispic').attr('src', pic);
 		actualPic();
 	}
 
 	function nextPic(){
-		var pic = thispic.next().attr('src');
+		let pic = thispic.next().attr('src');
 		$('#thispic').attr('src', pic);
 		actualPic();
 	}
